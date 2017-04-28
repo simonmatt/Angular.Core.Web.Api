@@ -8,7 +8,7 @@
     TodoController.$inject = ['TodoService'];
 
     function TodoController(TodoService) {
-        /* jshint validthis:true */
+        
         var vm = this;
         vm.title = 'My Simple Todo';
         vm.todo = {};
