@@ -1,7 +1,8 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('app')
+    angular
+        .module('app')
         .service('TodoService', TodoService);
 
     TodoService.$inject = ['$http'];
@@ -13,10 +14,9 @@
         function getTodos() {
             return $http({
                 method: 'GET',
-                url:'/api/todo'
+                url: '/api/todo'
             });
         }
-
         function addTodo(todo) {
             return $http({
                 method: 'POST',
